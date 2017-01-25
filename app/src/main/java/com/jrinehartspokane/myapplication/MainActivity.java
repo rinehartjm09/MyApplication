@@ -21,21 +21,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         edtLoginName = (EditText) findViewById(R.id.edtLoginName);
         edtPassword = (EditText) findViewById(R.id.edtPassword);
-        chkStayLoggedIn = (CheckBox) findViewById(R.id.chkStayLoggedIn);
     }
 
     public void btnLoginOnClick(View v) {
 //        Log.i("CLICK", "Login button was clicked");
 //        Log.i( "CLICK", edtLoginName.getText().toString());
         Toast.makeText(this, "You successfully logged in: " + edtLoginName.getText().toString() +
-                "\rYour Password is: " + edtPassword.getText().toString() +
-                "\r" + chkStayLoggedIn.isChecked(), Toast.LENGTH_LONG).show();
+                "\nYour Password is: " + edtPassword.getText().toString(), Toast.LENGTH_LONG).show();
     }
 
     public void btnCancelOnClick(View v) {
 //        Log.i("CLICK", "Cancel was clicked");
         edtLoginName.setText("");
         edtPassword.setText("");
-        Toast.makeText(this, "Login has been canelled", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Login has been canceled", Toast.LENGTH_LONG).show();
     }
 }
