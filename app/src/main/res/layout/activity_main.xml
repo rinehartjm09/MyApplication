@@ -13,26 +13,14 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:layout_below="@+id/edtLoginName"
-        android:layout_marginTop="14dp"
-        android:id="@+id/edtPassword"
-        android:layout_alignStart="@+id/btnLogin"
-        android:layout_alignEnd="@+id/btnLogin"
-        android:hint="Password" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_marginTop="13dp"
         android:id="@+id/edtLoginName"
         android:hint="Username"
         android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Login"
@@ -40,21 +28,53 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnLogin"
         android:onClick="btnLoginOnClick"
+        android:layout_marginTop="22dp"
         android:layout_below="@+id/edtPassword"
-        android:layout_alignStart="@+id/edtLoginName"
-        android:layout_marginTop="38dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/edtPassword"
+        android:hint="Password"
+        android:layout_below="@+id/edtLoginName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your account for everything Cassera"
+        android:text="Your account for everything Caasera"
         android:id="@+id/textView"
         android:textSize="20sp"
         android:typeface="normal"
         android:textStyle="normal|bold"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="82dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="Keep me logged in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkStayLoggedIn"
+        android:checked="false"
+        android:layout_below="@+id/btnCancel"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancel"
+        android:layout_marginTop="63dp"
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:onClick="btnCancelOnClick" />
 
 </RelativeLayout>
