@@ -2,6 +2,7 @@ package com.jrinehartspokane.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
@@ -26,8 +27,11 @@ public class MainActivity extends AppCompatActivity {
     public void btnLoginOnClick(View v) {
 //        Log.i("CLICK", "Login button was clicked");
 //        Log.i( "CLICK", edtLoginName.getText().toString());
+        finish();
+        Intent intent = new Intent(this, Landing1.class);
         Toast.makeText(this, "You successfully logged in: " + edtLoginName.getText().toString() +
                 "\nYour Password is: " + edtPassword.getText().toString(), Toast.LENGTH_LONG).show();
+        startActivity(intent);
     }
 
     public void btnCancelOnClick(View v) {

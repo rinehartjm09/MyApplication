@@ -2,62 +2,117 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_landing1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jrinehartspokane.myapplication.Landing1">
+    tools:context="com.jrinehartspokane.myapplication.Landing1"
+    android:id="@+id/activity_landing1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/caasera_logo"
+        android:id="@+id/imageView12"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="1"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/imageView13"
+        android:layout_alignParentStart="true">
 
         <ImageView
-            android:layout_width="86dp"
+            android:layout_width="110dp"
             android:layout_height="match_parent"
             app:srcCompat="@mipmap/golfball"
-            android:id="@+id/imageView4" />
+            android:id="@+id/imageView8"
+            android:layout_weight="0.50"
+            android:padding="10dp" />
 
         <ImageView
-            android:layout_width="101dp"
             android:layout_height="match_parent"
             app:srcCompat="@mipmap/basketball"
-            android:id="@+id/imageView3"
-            android:cropToPadding="false"
-            android:layout_marginLeft="10dp" />
+            android:id="@+id/imageView9"
+            android:layout_width="110dp"
+            android:layout_weight="0.50"
+            android:padding="10dp" />
 
         <ImageView
-            android:layout_width="83dp"
             android:layout_height="match_parent"
             app:srcCompat="@mipmap/golfball"
-            android:id="@+id/imageView5"
-            android:layout_weight="0.09"
-            android:layout_marginLeft="10dp" />
+            android:id="@+id/imageView10"
+            android:layout_width="110dp"
+            android:padding="10dp"
+            android:layout_weight="0.50" />
+
     </LinearLayout>
 
-    <Button
-        android:text="Login"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        app:srcCompat="@mipmap/dots1"
+        android:layout_above="@+id/btnFreeTrial"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/imageView13"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Previous "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPrev"
+        android:onClick="btnPrevOnClick"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/btnLogin" />
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:text="Next "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/button2"
+        android:onClick="btnNextOnClick"
+        android:layout_above="@+id/btnFreeTrial"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+
+    <Button
+        android:text="Log In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:id="@+id/btnLogin"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnPrev"
+        android:fontFamily="sans-serif"
+        android:onClick="btnLoginOnClick (Landing1)" />
 
     <Button
         android:text="Free Trial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btnLogin"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="62dp"
-        android:id="@+id/btnFreeTrial" />
+        android:id="@+id/btnFreeTrial"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/button2"
+        android:fontFamily="sans-serif" />
+
 </RelativeLayout>
