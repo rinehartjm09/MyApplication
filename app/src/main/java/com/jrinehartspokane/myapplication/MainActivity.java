@@ -35,6 +35,6 @@ public class MainActivity extends BaseActivity {
         edtLoginName.setText("");
         edtLoginName.requestFocus();
         edtPassword.setText("");
-        Toast.makeText(this, "Login has been canceled", Toast.LENGTH_LONG).show();
+        ToastIt("Login has been canceled");
     }
 }
