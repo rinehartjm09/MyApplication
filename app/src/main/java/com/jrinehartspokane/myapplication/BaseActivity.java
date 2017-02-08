@@ -8,10 +8,14 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 public class BaseActivity extends AppCompatActivity {
 
+    //New Gesture object
     public GestureDetectorCompat gestureObject;
+
+    //Array of different activities
     protected Class[] landingPages = {
             MainActivity.class,
             Landing1.class,
@@ -20,50 +24,58 @@ public class BaseActivity extends AppCompatActivity {
             Landing4.class,
             Landing5.class
     };
-    static int currentPage = 0;
 
+    //Set currentPage to 0 initially
+    public static int currentPage = 0;
+
+    //Login buttons on activity pages. Not main activity method
+    public void btnLoginOnClick(View v) {
+        finish();
+        currentPage = 0;
+        startActivity(new Intent(getApplicationContext(), landingPages[currentPage]));
+    }
+
+    //ToastIt method to print to the screen
+    public void ToastIt(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    //Creating onCreate method for BaseActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         gestureObject = new GestureDetectorCompat(this, new BaseActivity.LearnGesture());
     }
 
+    //onTouch event for swiping pages
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         this.gestureObject.onTouchEvent(event);
         return super.onTouchEvent(event);
     }
 
-    public void btnLoginOnClick(View v) {
-        finish();
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
+    //Gesture detector for swiping through pages
     class LearnGesture extends GestureDetector.SimpleOnGestureListener {
-        @Override
-        public boolean onFling(MotionEvent event1, MotionEvent event2, float velocityX, float velocityY) {
-            Log.i("BMI", "X1: " + event1.getX() + " Y1: " + event1.getY());
-            Log.i("BMI", "X2: " + event2.getX() + " Y2: " + event2.getY());
-            Log.i("BMI: ", "VelocityX: " + velocityX);
-            Log.i("BMI: ", "VelocityY: " + velocityY);
 
+        //onFling for detecting a swiping event
+        public boolean onFling(MotionEvent event1, MotionEvent event2, float velocityX, float velocityY) {
+
+            //Left to right swipe motion
             if (event2.getX() > event1.getX()) {
-                Log.i("BMI", "Left to Right Swipe");
                 if (currentPage > 0) {
                     currentPage--;
                     finish();
                     startActivity(new Intent(getApplicationContext(), landingPages[currentPage]));
                 }
+
+                //Right to Left swipe motion
             } else if (event2.getX() < event1.getX()) {
-                Log.i("BMI", "Right to Left Swipe");
                 if (currentPage < landingPages.length - 1) {
                     currentPage++;
                     finish();
                     startActivity(new Intent(getApplicationContext(), landingPages[currentPage]));
                 }
             }
-            Log.i("BMI", "Current page: " + currentPage);
             return true;
         }
     }

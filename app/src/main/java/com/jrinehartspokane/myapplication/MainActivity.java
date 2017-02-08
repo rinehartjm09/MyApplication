@@ -14,7 +14,6 @@ public class MainActivity extends BaseActivity {
 
     EditText edtLoginName;
     EditText edtPassword;
-    CheckBox chkStayLoggedIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,19 +23,17 @@ public class MainActivity extends BaseActivity {
         edtPassword = (EditText) findViewById(R.id.edtPassword);
     }
 
-    public void btnLoginOnClick(View v) {
-//        Log.i("CLICK", "Login button was clicked");
-//        Log.i( "CLICK", edtLoginName.getText().toString());
+    public void btnMainLoginOnClick(View v) {
         finish();
-        Intent intent = new Intent(this, Landing1.class);
-        Toast.makeText(this, "You successfully logged in: " + edtLoginName.getText().toString() +
-                "\nYour Password is: " + edtPassword.getText().toString(), Toast.LENGTH_LONG).show();
-        startActivity(intent);
+        currentPage = 1;
+        startActivity(new Intent(getApplicationContext(), landingPages[currentPage]));
+        ToastIt("You successfully logged in: " + edtLoginName.getText().toString() +
+                "\nYour Password is: " + edtPassword.getText().toString());
     }
 
     public void btnCancelOnClick(View v) {
-//        Log.i("CLICK", "Cancel was clicked");
         edtLoginName.setText("");
+        edtLoginName.requestFocus();
         edtPassword.setText("");
         Toast.makeText(this, "Login has been canceled", Toast.LENGTH_LONG).show();
     }

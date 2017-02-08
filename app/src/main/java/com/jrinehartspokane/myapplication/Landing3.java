@@ -12,16 +12,4 @@ public class Landing3 extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing3);
     }
-
-    public void btnNextOnClick(View v) {
-        finish();
-        Intent intent = new Intent(this, Landing4.class);
-        startActivity(intent);
-    }
-
-    public void btnPrevOnClick(View v) {
-        finish();
-        Intent intent = new Intent(this, Landing2.class);
-        startActivity(intent);
-    }
 }

@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnLogin"
-        android:onClick="btnLoginOnClick"
+        android:onClick="btnMainLoginOnClick"
         android:background="@drawable/login_border"
         android:textColor="#ffffff"
         android:layout_marginBottom="11dp"
