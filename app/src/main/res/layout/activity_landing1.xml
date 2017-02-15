@@ -81,7 +81,7 @@
         android:textSize="24sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:onClick="btnLoginOnClick" />
+        android:onClick="btnFreeTrialOnClick" />
 
     <Button
         android:text="Log In"

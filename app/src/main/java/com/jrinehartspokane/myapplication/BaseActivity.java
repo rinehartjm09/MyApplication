@@ -35,6 +35,12 @@ public class BaseActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), landingPages[currentPage]));
     }
 
+    public void btnFreeTrialOnClick(View v) {
+        finish();
+//        currentPage = 0;
+        startActivity(new Intent(getApplicationContext(), FreeTrial.class));
+    }
+
     //ToastIt method to print to the screen
     public void ToastIt(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();

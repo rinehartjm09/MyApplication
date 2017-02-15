@@ -21,7 +21,8 @@
         <activity android:name=".Landing2" />
         <activity android:name=".Landing3" />
         <activity android:name=".Landing4" />
-        <activity android:name=".Landing5"></activity>
+        <activity android:name=".Landing5" />
+        <activity android:name=".FreeTrial"></activity>
     </application>
 
 </manifest>
