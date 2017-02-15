@@ -1,8 +1,10 @@
 package com.jrinehartspokane.myapplication;
 
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class FreeTrial extends AppCompatActivity {
     WebView wvFreeTrial;
@@ -12,6 +14,13 @@ public class FreeTrial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_free_trial);
         wvFreeTrial = (WebView) findViewById(R.id.wvFreeTrial);
+        wvFreeTrial.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+        });
         wvFreeTrial.loadUrl("https://www.google.com");
     }
 }
