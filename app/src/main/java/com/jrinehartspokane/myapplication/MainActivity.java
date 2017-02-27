@@ -49,7 +49,7 @@ public class MainActivity extends BaseActivity {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        ToastIt("You successfully logged in: " + edtLoginName.getText().toString() +
+                        ToastIt(getString(com.jrinehartspokane.myapplication.R.string.loggedIn) + edtLoginName.getText().toString() +
                                 "\nYour Password is: " + edtPassword.getText().toString());
                         finish();
                         currentPage = 1;
