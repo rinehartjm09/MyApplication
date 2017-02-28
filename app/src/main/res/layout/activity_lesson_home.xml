@@ -12,7 +12,7 @@
     tools:context="com.jrinehartspokane.myapplication.LessonHomeActivity">
 
     <TextView
-        android:text="Lessons"
+        android:text="@string/lessons_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -24,7 +24,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:text="Feedback"
+        android:text="@string/feedback_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView5"
@@ -36,7 +36,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Exercises"
+        android:text="@string/exercises_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"

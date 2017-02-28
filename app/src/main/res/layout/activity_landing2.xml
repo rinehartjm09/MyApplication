@@ -12,7 +12,7 @@
     tools:context="com.jrinehartspokane.myapplication.Landing2">
 
     <Button
-        android:text="Free Trial"
+        android:text="@string/free_trial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnFreeTrial"
@@ -27,7 +27,7 @@
         android:onClick="btnFreeTrialOnClick" />
 
     <Button
-        android:text="Log In"
+        android:text="@string/log_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -54,7 +54,7 @@
         android:layout_marginTop="30dp" />
 
     <TextView
-        android:text="|"
+        android:text="@string/divider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtDivider"
@@ -76,7 +76,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Nullam quis nibh facilisis"
+        android:text="@string/landing_2_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtL2Heading"
@@ -90,7 +90,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Nullam quis nibh facilisis, tempuselit et, porttitor leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Ut rutrum nisl sed lectus volutpat."
+        android:text="@string/landing_2_para"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtL2"

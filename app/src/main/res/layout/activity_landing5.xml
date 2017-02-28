@@ -12,7 +12,7 @@
     tools:context="com.jrinehartspokane.myapplication.Landing5">
 
     <Button
-        android:text="Free Trial"
+        android:text="@string/free_trial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnFreeTrial"
@@ -27,7 +27,7 @@
         android:onClick="btnFreeTrialOnClick" />
 
     <Button
-        android:text="Log In"
+        android:text="@string/log_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -62,7 +62,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="In odio tellus, viverra sed diam id, vehicula condimentum metus. Pellentesque dignissim, ipsum eget consectetur sagittis, sapien metus tristique odio, in porttitor felis ligula at ipsum. Phasellus viverra porta elit sed rhoncus. Mauris id porttitor."
+        android:text="@string/landing_5_para"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtL3"
@@ -74,7 +74,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="In odio tellus"
+        android:text="@string/landing_5_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtL5Heading"
@@ -88,7 +88,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="|"
+        android:text="@string/divider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtDivider"

@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CAASera</string>
-    <string name="loggedIn">\"Has iniciado sesión correctamente:\"</string>
+    <string name="loggedIn">Has iniciado sesión correctamente:</string>
+    <string name="Password">Su contraseña es:</string>
+    <string name="properCredentials">Utilice las credenciales adecuadas.</string>
+    <string name="loginCanceled">El inicio de sesión ha sido cancelado.</string>
+    <string name="your_account_for_everything_caasera">Tu cuenta para todo Caasera.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="login">"Iniciar sesión "</string>
+    <string name="password">"Contraseña "</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="divider">|</string>
+    <string name="free_trial">"Prueba gratis "</string>
+    <string name="log_in">"Iniciar sesión "</string>
+    <string name="exercises_link">Ceremonias</string>
+    <string name="feedback_link">"Realimentación "</string>
+    <string name="landing_2_heading">Nibh Lorem</string>
+    <string name="landing_2_para">Nulla quis facilisis nibh, tempusel y, porttitor leo. Vestibulum ante ipsum primis en faucibus Orci luctus et ultrices posuere eget diam; Nulla. Ut rutrum nisl sed lectus volutpat.</string>
+    <string name="landing_3_heading">Lorem ipsum dolor sit amet</string>
+    <string name="landing_3_para">Lorem ipsum dolor sit amet, elit consectetur adipiscing. Ut imperdiet, me reí, pero blandit congue, siendo el temor a que es beber, pero es sólo augue tortor mauris. Praesent no odio sem, el autor de que sólo desde el no, ultricies accumsan metus. Sin embargo,</string>
+    <string name="landing_4_heading">Sapien la terapia de acupuntura</string>
+    <string name="landing_4_para">Nulla Justo sapiens, siempre blandit consequat eget, porta vel erat. Sin el fútbol siempre se establece. Vestibulum mollis pulvinar lorem quis Mattis. Aliquam condimentum eget sagittis lacinia nisi. Proin eleifend leo pharetra mi venenatis, vel laoreet ñeque.</string>
+    <string name="landing_5_heading">en Tellus</string>
+    <string name="landing_5_para">En Tellus odio, sed diam adipiscing Identificación, vehicula condimentum metus. Pellentesque dignissim, consectetur sagittis ipsum eget, tristique metus odio sapiens, y en ligula porttitor felis en él. Phasellus viverra rhoncus elit, sed porta. Mauris esa línea aérea.</string>
+    <string name="lessons_link">Lecciones</string>
 </resources>

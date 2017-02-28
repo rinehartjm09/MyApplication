@@ -11,7 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/CaaseraTheme">
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Landing1" />
         <activity android:name=".Landing2" />
@@ -21,11 +25,6 @@
         <activity android:name=".FreeTrial" />
         <activity android:name=".Playground" />
         <activity android:name=".LessonHomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

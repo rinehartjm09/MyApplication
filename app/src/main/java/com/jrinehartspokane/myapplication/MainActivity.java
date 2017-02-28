@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         ToastIt(getString(com.jrinehartspokane.myapplication.R.string.loggedIn) + edtLoginName.getText().toString() +
-                                "\nYour Password is: " + edtPassword.getText().toString());
+                                getString(R.string.Password) + edtPassword.getText().toString());
                         finish();
                         currentPage = 1;
                         startActivity(new Intent(getApplicationContext(), landingPages[currentPage]));
@@ -60,7 +60,7 @@ public class MainActivity extends BaseActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Log.i("BMI", "Login error: " + error.networkResponse.statusCode);
-                        ToastIt("Please use proper credentials.");
+                        ToastIt(getString(R.string.properCredentials));
                     }
                 }) {
             @Override
@@ -80,6 +80,6 @@ public class MainActivity extends BaseActivity {
         edtLoginName.setText("");
         edtLoginName.requestFocus();
         edtPassword.setText("");
-        ToastIt("Login has been canceled");
+        ToastIt(getString(R.string.loginCanceled));
     }
 }

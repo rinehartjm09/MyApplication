@@ -10,7 +10,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
+
 public class BaseActivity extends AppCompatActivity {
+
 
     //New Gesture object
     public GestureDetectorCompat gestureObject;

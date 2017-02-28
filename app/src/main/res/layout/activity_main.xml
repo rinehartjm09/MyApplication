@@ -14,7 +14,7 @@
 
 
     <Button
-        android:text="Cancel"
+        android:text="@string/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnCancel"
@@ -34,7 +34,7 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/edtLoginName"
-        android:hint="Username"
+        android:hint="@string/username"
         android:background="@drawable/text_field_border"
         android:padding="12dp"
         android:layout_above="@+id/edtPassword"
@@ -48,7 +48,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/edtPassword"
-        android:hint="Password"
+        android:hint="@string/password"
         android:background="@drawable/text_field_border"
         android:padding="12dp"
         android:layout_marginBottom="58dp"
@@ -58,7 +58,7 @@
         android:textColor="?android:attr/navigationBarColor" />
 
     <Button
-        android:text="Login"
+        android:text="@string/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnLogin"
@@ -85,7 +85,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your account for everything Caasera."
+        android:text="@string/your_account_for_everything_caasera"
         android:id="@+id/textView"
         android:textSize="16sp"
         android:typeface="normal"

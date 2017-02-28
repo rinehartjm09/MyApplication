@@ -1,6 +1,28 @@
 <resources>
     <string name="app_name">CAASera</string>
-    <string name="loggedIn">"You successfully logged in: "</string>
+    <string name="loggedIn">You successfully logged in: </string>
+    <string name="Password">\nYour Password is: </string>
+    <string name="properCredentials">Please use proper credentials.</string>
+    <string name="loginCanceled">Login has been canceled</string>
+    <string name="your_account_for_everything_caasera">Your account for everything Caasera.</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="cancel">Cancel</string>
+    <string name="divider">|</string>
+    <string name="free_trial">Free Trial</string>
+    <string name="log_in">Log In</string>
+    <string name="landing_2_heading">Nullam quis nibh facilisis</string>
+    <string name="landing_2_para">Nullam quis nibh facilisis, tempuselit et, porttitor leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Ut rutrum nisl sed lectus volutpat.</string>
+    <string name="landing_3_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet, risi sed congue blandit, metus est bibendum ente, ut ultricies augue tortor sed mauris. Vivamus neque sem, auctor nec nisi non, ultricies accumsan metus. Sed</string>
+    <string name="landing_3_heading">Lorem ipsum dolor sit amet</string>
+    <string name="landing_4_heading">Nulla justo sapien</string>
+    <string name="landing_4_para">Nulla justo sapien, semper blandit consequat eget, porta vel erat. Nullam eu semper set. Vestibulum mollis pulvinar lorem quis mattis. Aliquim condimentum lacinia nisi eget sagittis. Proin eleifend leo pharetra mi venenatis, vel laoreet neque.</string>
+    <string name="landing_5_para">In odio tellus, viverra sed diam id, vehicula condimentum metus. Pellentesque dignissim, ipsum eget consectetur sagittis, sapien metus tristique odio, in porttitor felis ligula at ipsum. Phasellus viverra porta elit sed rhoncus. Mauris id porttitor.</string>
+    <string name="landing_5_heading">In odio tellus</string>
+    <string name="lessons_link">Lessons</string>
+    <string name="feedback_link">Feedback</string>
+    <string name="exercises_link">Exercises</string>
     <string-array name="countries_list">
         <item>Afghanistan</item>
         <item>Albania</item>
