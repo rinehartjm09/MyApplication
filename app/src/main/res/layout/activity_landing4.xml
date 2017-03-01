@@ -21,7 +21,7 @@
         android:background="@android:color/transparent"
         android:layout_marginEnd="19dp"
         android:fontFamily="sans-serif"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:onClick="btnFreeTrialOnClick" />
@@ -37,7 +37,7 @@
         android:textColor="?attr/colorAccent"
         android:fontFamily="sans-serif"
         android:onClick="btnLoginOnClick"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
