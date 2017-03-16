@@ -20,6 +20,7 @@ public class BaseActivity extends AppCompatActivity {
     //Array of different activities
     protected Class[] landingPages = {
             MainActivity.class,
+            LessonHomeActivity.class,
             Playground.class,
             Landing1.class,
             Landing2.class,
@@ -32,6 +33,7 @@ public class BaseActivity extends AppCompatActivity {
     public static int currentPage = 0;
     static String username = "";
     static String password = "";
+    static StudentInfo studentInfo;
 
     //Login buttons on activity pages. Not main activity method
     public void btnLoginOnClick(View v) {

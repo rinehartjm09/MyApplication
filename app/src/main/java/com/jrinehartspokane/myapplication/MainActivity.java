@@ -17,9 +17,11 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -53,6 +55,19 @@ public class MainActivity extends BaseActivity {
                                 getString(R.string.Password) + edtPassword.getText().toString());
                         finish();
                         currentPage = 1;
+                        //Get info here
+
+//Create Jackson Object Mapper instance
+                        ObjectMapper objectMapper = new ObjectMapper();
+                        //convert json string to object
+                        try {
+                            studentInfo = objectMapper.readValue(response.toString(), StudentInfo.class);
+//                            Log.i("BMI", studentInfo.getFirstName());
+//                            Log.i("BMI",studentInfo.getCurrentSubscription().getCurrentLesson().getTitle());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
                         startActivity(new Intent(getApplicationContext(), landingPages[currentPage]));
                     }
                 },
