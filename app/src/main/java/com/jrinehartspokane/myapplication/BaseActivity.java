@@ -21,7 +21,6 @@ public class BaseActivity extends AppCompatActivity {
     protected Class[] landingPages = {
             MainActivity.class,
             LessonHomeActivity.class,
-            Playground.class,
             Landing1.class,
             Landing2.class,
             Landing3.class,
